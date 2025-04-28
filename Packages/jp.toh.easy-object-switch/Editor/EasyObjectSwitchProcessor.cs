@@ -197,7 +197,6 @@ namespace jp.toh.easy_object_switch.editor
             bool localOnly = !targetComponent.IsSynced();
             bool saved = targetComponent.IsSaved();
             foreach (var parameterInfo in parametersInfo) {
-                Debug.Log(parameterInfo.GetUniqueParameterName());
                 if (targetComponent.generateMode == GenerateMode.SWITCH_INDIVIDUALLY) {
                     localOnly = !parameterInfo.IsSynced();
                     saved = parameterInfo.IsSaved();
